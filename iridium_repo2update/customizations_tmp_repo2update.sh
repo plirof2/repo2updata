@@ -23,7 +23,7 @@ mkdir -p ./$MYFILENAMEextracted/usr/bin
 
 
 #!/bin/sh
-
+echo "iridium-browser-puppy"
 cat > ./$MYFILENAMEextracted/usr/bin/iridium-browser-puppy << EOF
 #!/bin/sh
 #export CHROMIUM_FLAGS="--ppapi-flash-path=/usr/lib/adobe-flashplugin/libpepflashplayer.so --ppapi-flash-version=26.0.0.137"
@@ -53,6 +53,7 @@ EOF2
 ################### SDA1 #########################################################
 if [ $SDA1SCRIPTS == true ]
 then
+echo "iridium-browser-puppy-sda1"
 cat > ./$MYFILENAMEextracted/usr/bin/iridium-browser-puppy-sda1.sh << EOF31
 #!/bin/sh
 
