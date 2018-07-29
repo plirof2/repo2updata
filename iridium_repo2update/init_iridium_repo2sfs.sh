@@ -16,5 +16,6 @@ rm $MYFILENAME.extracted/md5sums
 rm $MYFILENAME.extracted/postinst
 rm $MYFILENAME.extracted/prerm
 ./customizations_tmp_repo2update.sh "$MYFILENAME.extracted"
-cp -pr ./$MYFILENAME.extracted /
+echo "NOW COPYING....."
+cp -avpr ./$MYFILENAME.extracted/ /
 #mv $MYFILENAME.squashfs $MYFILENAME_$MYVERSION.squashfs
