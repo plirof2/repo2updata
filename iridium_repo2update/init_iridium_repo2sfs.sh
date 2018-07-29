@@ -17,5 +17,7 @@ rm $MYFILENAME.extracted/postinst
 rm $MYFILENAME.extracted/prerm
 ./customizations_tmp_repo2update.sh "$MYFILENAME.extracted"
 echo "NOW COPYING....."
-cp -avpr ./$MYFILENAME.extracted/ /
+#cp -avpr ./$MYFILENAME.extracted /  
+cd $MYFILENAME.extracted
+cp -avpr ./ /
 #mv $MYFILENAME.squashfs $MYFILENAME_$MYVERSION.squashfs
