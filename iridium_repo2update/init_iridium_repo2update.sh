@@ -9,7 +9,7 @@ wget https://downloads.iridiumbrowser.de/deb/$MYFILENAME
 #cp DEBIAN/control /tmp/repo2sfs/$MYFILENAME_control.txt
 #../repo2sfs_custom $MYFILENAME
 uextract $MYFILENAME
-
+mv ./chrome-sandbox_from_chromium66 "./"$MYFILENAME".extracted/usr/lib/iridium-browser/chrome-sandbox"
 mv $MYFILENAME.extracted/control "./"$MYFILENAME".extracted/"$MYFILENAME"_control.txt"
 rm $MYFILENAME.extracted/conffiles
 rm $MYFILENAME.extracted/md5sums
