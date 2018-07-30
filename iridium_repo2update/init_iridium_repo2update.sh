@@ -9,7 +9,7 @@ wget https://downloads.iridiumbrowser.de/deb/$MYFILENAME
 #cp DEBIAN/control /tmp/repo2sfs/$MYFILENAME_control.txt
 #../repo2sfs_custom $MYFILENAME
 uextract $MYFILENAME
-mv ./chrome-sandbox_from_chromium66 "./"$MYFILENAME".extracted/usr/lib/iridium-browser/chrome-sandbox"
+mv ./chrome-sandbox__iridium-browser_58 "./"$MYFILENAME".extracted/usr/lib/iridium-browser/chrome-sandbox"
 mv $MYFILENAME.extracted/control "./"$MYFILENAME".extracted/"$MYFILENAME"_control.txt"
 rm $MYFILENAME.extracted/conffiles
 rm $MYFILENAME.extracted/md5sums
@@ -20,4 +20,5 @@ echo "NOW COPYING....."
 #cp -avpr ./$MYFILENAME.extracted /  
 cd $MYFILENAME.extracted
 cp -avpr ./ /
+echo "Latest Iridium amd64 version should be installed now"
 #mv $MYFILENAME.squashfs $MYFILENAME_$MYVERSION.squashfs

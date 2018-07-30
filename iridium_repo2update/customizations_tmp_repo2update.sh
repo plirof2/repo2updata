@@ -11,6 +11,7 @@ MYFILENAMEextracted=$1
 echo "IRIDIUM config using FILENAME="$MYFILENAMEextracted
 #chmod 755 /$MYFILENAMEextracted/usr/bin/iridium-browser-puppy
 chmod 4755 ./$MYFILENAMEextracted/usr/lib/x86_64-linux-gnu/iridium-browser/iridium-browser_sandbox
+chmod 4755 ./$MYFILENAMEextracted/usr/lib/iridium-browser/chrome-sandbox
 #read -p "Done. Remember to create the puppy user. Press Enter: "
 
 
